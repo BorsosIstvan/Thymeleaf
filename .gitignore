@@ -34,3 +34,4 @@ build/
 
 ### Poci security ###
 /scr/main/resources/application.properties
+application.propertirs
