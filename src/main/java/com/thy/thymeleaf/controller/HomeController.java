@@ -12,6 +12,11 @@ import com.thy.thymeleaf.service.ContactService;
 
 @Controller
 public class HomeController {
+	
+	@RequestMapping("")
+	public String index() {
+		return "fooldal";
+	}
 	private ContactService contactService;
 	
 	@Autowired
