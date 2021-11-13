@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Poci security ###
+/scr/main/resources/application.properties
