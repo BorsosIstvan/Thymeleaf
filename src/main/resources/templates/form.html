@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" th:href=@{css/dark_theme.css} href="../static/css/derk_theme.css">
+<title>Add new contact</title>
+</head>
+<body>
+
+ <div align="center">
+    <h1>Add new contacts to database</h1>
+<form action="#" th:action="@{/form}" th:object="${contact}" method="post">
+<p>        <label>Name:</label>
+        <input type="text" th:field="*{name}"><br>
+</p>        
+<p>        <label>Email:</label>
+        <input type="text" th:field="*{email}"><br>
+</p>
+<p>        <label>Country:</label>
+        <input type="text" th:field="*{country}"><br>
+</p>
+        <br>
+ 
+        <button type="submit">Add to database</button>    
+    </form>
+</div>
+
+</body>
+</html>

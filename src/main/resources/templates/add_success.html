@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Success</title>
+
+</head>
+<body>
+<div align="center">
+    <h2>Add to database Succeeded!</h2>
+    <span>Name:</span><span th:text="${contact.name}"></span><br/>
+    <span>E-mail:</span><span th:text="${contact.email}"></span><br/>
+    <span>Country:</span><span th:text="${contact.country}"></span><br/>
+    <br><br>
+    <a href="/list_contacts">Click here to list contacts></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" th:href=@{css/dark_theme.css} href="../static/css/derk_theme.css">
+<title>Contact List - Spring Boot Web Application Example</title>
+</head>
+<body>
+    <h1>My Contact List</h1>
+    <br/>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="contact : ${contacts}">
+                <td th:text="${contact.name}">Name</td>
+                <td th:text="${contact.email}">Email</td>
+                <td th:text="${contact.country}">Country</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
